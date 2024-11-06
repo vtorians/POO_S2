@@ -1,1 +1,265 @@
+QUESTÃO 01. Escreva um programa que recebe dois números inteiros do usuário e exibe a soma deles. Use o operador +.
+
+import java.util.Scanner;
+
+public class SomaNumeros {
+    public static void main(String[] args) {
+      
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+        System.out.print("Digite o segundo número inteiro: ");
+       int numero2 = scanner.nextInt();
+
+int soma = numero1 + numero2;
+
+        System.out.println("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+        
+        scanner.close();
+    }
+}
+
+QUESTÃO 02. Receba três números do usuário e calcule a média aritmética. Use operadores aritméticos (+, /) para fazer o cálculo.
+
+import java.util.Scanner;
+
+public class MediaAritmetica {
+    public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double numero1 = scanner.nextDouble();
+       System.out.print("Digite o segundo número: ");
+       double numero2 = scanner.nextDouble();
+        System.out.print("Digite o terceiro número: ");
+        double numero3 = scanner.nextDouble();
+      
+       double soma = numero1 + numero2 + numero3;
+      
+        double media = soma / 3;
+      
+        System.out.println("A média aritmética dos números " + numero1 + ", " + numero2 + " e " + numero3 + " é: " + media);
+
+      
+        scanner.close();
+    }
+}
+
+QUESTÃO 03. Peça um número ao usuário e determine se ele é par ou ímpar. Use o operador de módulo % para verificar o resto da divisão por 2.
+
+
+import java.util.Scanner;
+
+public class ParOuImpar {
+    public static void main(String[] args) {
+     
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+       
+        if (numero % 2 == 0) {
+            System.out.println("O número " + numero + " é par.");
+        } else {
+            System.out.println("O número " + numero + " é ímpar.");
+        }
+
+    
+        scanner.close();
+    }
+}
+
+
+QUESTÃO 04. Receba duas idades e determine qual é maior, ou se são iguais. Use operadores relacionais (>,<, ==) para comparar as idades.
+
+import java.util.Scanner;
+
+public class CompararIdades {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+      
+        System.out.print("Digite a primeira idade: ");
+        int idade1 = scanner.nextInt();
+       
+        System.out.print("Digite a segunda idade: ");
+        int idade2 = scanner.nextInt();
+
+       
+        if (idade1 > idade2) {
+            System.out.println("A primeira idade (" + idade1 + ") é maior que a segunda idade (" + idade2 + ").");
+        } else if (idade1 < idade2) {
+            System.out.println("A segunda idade (" + idade2 + ") é maior que a primeira idade (" + idade1 + ").");
+        } else {
+            System.out.println("As idades são iguais.");
+        }
+
+       
+        scanner.close();
+    }
+}
+
+QUESTÃO 05. Receba um número e verifique se ele está entre 10 e 20, inclusive. Use operadores lógicos(&&) e relacionais (>=, <=).
+
+import java.util.Scanner;
+
+public class VerificarNumero {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+
+        if (numero >= 10 && numero <= 20) {
+            System.out.println("O número " + numero + " está entre 10 e 20.");
+        } else {
+            System.out.println("O número " + numero + " não está entre 10 e 20.");
+        }
+
+        scanner.close();
+    }
+}
+
+QUESTÃO 06. Crie um programa que calcula o preço com desconto. Receba o preço original e o percentual de desconto (ex: 15%). Use o operador de multiplicação * e subtração - para calcular o valor
+final.
+
+import java.util.Scanner;
+
+public class CalculadoraDesconto {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o preço original: R$ ");
+        double precoOriginal = scanner.nextDouble();
+
+        System.out.print("Digite o percentual de desconto (ex: 15 para 15%): ");
+        double percentualDesconto = scanner.nextDouble();
+
+        double valorDesconto = (percentualDesconto / 100) * precoOriginal;
+
+        double precoFinal = precoOriginal - valorDesconto;
+
+        System.out.printf("O preço original era R$ %.2f. Com desconto de %.2f%%, o preço final é R$ %.2f.%n", 
+                          precoOriginal, percentualDesconto, precoFinal);
+
+        scanner.close();
+    }
+}
+
+
+QUESTÃO 07. Peça a idade do usuário e verifique se ele pode votar (idade >= 16). Use operadores relacionais para determinar se a idade é suficiente para votar.
+
+
+import java.util.Scanner;
+
+public class VerificarIdadeParaVotar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite sua idade: ");
+        int idade = scanner.nextInt();
+
+        if (idade >= 16) {
+            System.out.println("Você pode votar.");
+        } else {
+            System.out.println("Você não pode votar.");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+QUESTÕ 08. Declare uma variável contador com valor inicial de 5. Use o operador de incremento ++ para aumentar o valor e exiba o novo valor. Em seguida, 
+use o operador de decremento -- para diminuir o valor e mostre o resultado.
+
+public class Contador {
+    public static void main(String[] args) {
+        int contador = 5;
+
+        System.out.println("Valor inicial do contador: " + contador);
+
+        contador++;
+        System.out.println("Após incrementar, o contador é: " + contador);
+
+        contador--;
+        System.out.println("Após decrementar, o contador é: " + contador);
+    }
+}
+
+
+QUESTÃO 09. Peça duas idades e verifique se ambas as pessoas são maiores de idade (>= 18). Use operadores lógicos (&&) e relacionais para fazer a verificação.
+
+import java.util.Scanner;
+
+public class VerificarMaioridade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a idade da primeira pessoa: ");
+        int idade1 = scanner.nextInt();
+        System.out.print("Digite a idade da segunda pessoa: ");
+        int idade2 = scanner.nextInt();
+
+        if (idade1 >= 18 && idade2 >= 18) {
+            System.out.println("Ambas as pessoas são maiores de idade.");
+        } else {
+            System.out.println("Pelo menos uma das pessoas não é maior de idade.");
+        }
+
+        scanner.close();
+    }
+}
+
+QUESTÃO 10. Peça dois números e um operador (+, -, *, /) ao usuário. Implemente uma calculadora que, com 
+base no operador fornecido, realiza a operação correspondente e exibe o resultado
+
+import java.util.Scanner;
+
+public class Calculadora {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        double numero1 = scanner.nextDouble();
+
+        System.out.print("Digite o segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        System.out.print("Digite o operador (+, -, *, /): ");
+        char operador = scanner.next().charAt(0);
+
+        double resultado;
+
+        switch (operador) {
+            case '+':
+                resultado = numero1 + numero2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '-':
+                resultado = numero1 - numero2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '*':
+                resultado = numero1 * numero2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '/':
+                if (numero2 != 0) {
+                    resultado = numero1 / numero2;
+                    System.out.println("Resultado: " + resultado);
+                } else {
+                    System.out.println("Erro: Divisão por zero não é permitida.");
+                }
+                break;
+            default:
+                System.out.println("Operador inválido. Por favor, use +, -, * ou /.");
+                break;
+        }
+
+        scanner.close();
+    }
+}
 
