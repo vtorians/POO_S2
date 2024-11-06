@@ -2,7 +2,7 @@ QUESTÃO 01. Escreva um programa que recebe dois números inteiros do usuário e
 
 import java.util.Scanner;
 
-public class SomaNumeros {
+public class soma {
     public static void main(String[] args) {
       
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ QUESTÃO 02. Receba três números do usuário e calcule a média aritmética. U
 
 import java.util.Scanner;
 
-public class MediaAritmetica {
+public class Media {
     public static void main(String[] args) {
        
         Scanner scanner = new Scanner(System.in);
@@ -50,7 +50,7 @@ QUESTÃO 03. Peça um número ao usuário e determine se ele é par ou ímpar. U
 
 import java.util.Scanner;
 
-public class ParOuImpar {
+public class imparpar {
     public static void main(String[] args) {
      
         Scanner scanner = new Scanner(System.in);
@@ -76,7 +76,7 @@ QUESTÃO 04. Receba duas idades e determine qual é maior, ou se são iguais. Us
 
 import java.util.Scanner;
 
-public class CompararIdades {
+public class comparar {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
@@ -105,7 +105,7 @@ QUESTÃO 05. Receba um número e verifique se ele está entre 10 e 20, inclusive
 
 import java.util.Scanner;
 
-public class VerificarNumero {
+public class verificanum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -127,7 +127,7 @@ final.
 
 import java.util.Scanner;
 
-public class CalculadoraDesconto {
+public class desconto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -154,7 +154,7 @@ QUESTÃO 07. Peça a idade do usuário e verifique se ele pode votar (idade >= 1
 
 import java.util.Scanner;
 
-public class VerificarIdadeParaVotar {
+public class idade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -195,7 +195,7 @@ QUESTÃO 09. Peça duas idades e verifique se ambas as pessoas são maiores de i
 
 import java.util.Scanner;
 
-public class VerificarMaioridade {
+public class maioridade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite a idade da primeira pessoa: ");
